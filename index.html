@@ -8,6 +8,12 @@ body{
   color:wheat;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .left{
   float: left;
   background-color:blueviolet;
@@ -26,6 +32,7 @@ body{
 .listItem{
   font-family: monospace;
   font-size: 16px;
+
 }
 
 
@@ -33,18 +40,18 @@ body{
 
 <html>
   <body>
-    <h1 background-color: black>Kinsley Aikeins</h1>
-    <img src = "robot.jpg" alt = "Profile Pic" width = "400" height = "300">
+    <header class = "center" background: black >Kinsley Aikeins</header>
+    <img class = "center" src = "robot.jpg" alt = "Profile Pic" width = "400" height = "300">
     <h1>About Me</h1>
     <p>Hello World, I'm Kinsley Aikeins, a UMass Amherst Computer Science 2021 <em>Hopeful</em></p>
     <p>I'm looking to not fail this class and the best way to do that is to go in with a great attitude :)</p>
 
-    <div>
-    <h2>Projects</h2>
+    <div style = "display: flex">
+    <h2 class = "center">Projects</h2>
     
     <ul class= "left"><p class = "listTitle">Past</p>
       <li class = "listItem">PopCannon</li>
-      <li class = "listItem">Springfield Dr. Suess Museum Art</li>
+      <li class = "listItem">Springfield Dr.Suess Museum Art</li>
     </ul>
     <ul class= "right"><p class = "listTitle">Present</p>
       <li class = "listItem">OrchardWatch AWS Cloud Support</li>
@@ -52,25 +59,31 @@ body{
       <li class = "listItem">???</li>
     </ul>
     </div>
-    <div>
+
+    <div style = "display: flex">
     <h2>Skills</h2>
     
     <ul class = "left"> <p class = "listTitle">Professional</p>
+      <li class = "listItem">Auditing</li>
       <li class = "listItem">Microsoft Word</li>
-      <li class = "listItem">Balancing Accounts</li>
-      <li class = "listItem">Java, JavaScript, Making Java Coffee</li>
+      <li class = "listItem">Java, JavaScript, Java K-cups</li>
     </ul>
+
     <ul class = "right"> <p class = "listTitle">Hobbies</p>
       <li class = "listItem">Painting</li>
       <li class = "listItem">Pandiculating</li>
       <li class = "listItem">Procrastinating</li>
     </ul>
+
     </div>
+
     <div clear: both>
-    <h2>Reach Me</h2>
-    <p><a href = "https://github.com/KinsleyWA">Github</a>
+    <footer font-size: 24px>Reach Me @
+    <p font-size: 16px>
+      <a href = "https://github.com/KinsleyWA">Github</a>
       <a href = "https://venmo.com/Kinsley-Aikeins">Venmo</a>
     </p>
+  </footer>
     </div>
   </body>
 </html>
