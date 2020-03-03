@@ -1,37 +1,77 @@
 <!-- "Hello World" -->
 <!DOCTYPE html>
+<style> 
+body{
+  background-image: "purpleSunset.jpg";
+  max-width: 500px;
+  margin: auto;
+  color:wheat;
+}
+
+.left{
+  float: left;
+  background-color:blueviolet;
+}
+
+.right{
+  float: right;
+  background-color: dodgerblue;
+}
+
+.listTitle{
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.listItem{
+  font-family: monospace;
+  font-size: 16px;
+
+}
+
+
+</style>
+
 <html>
   <body>
-    <h1>Kinsley Aikeins</h1>
+    <h1 background-color: black>Kinsley Aikeins</h1>
     <img src = "robot.jpg" alt = "Profile Pic" width = "400" height = "300">
     <h1>About Me</h1>
     <p>Kinsley Aikeins is a UMass Amherst Computer Science 2021 <em>Hopeful</em></p>
     <p></p>
 
-
+    <div>
     <h2>Projects</h2>
     
-    <ul>Past
-      <li>PopCannon</li>
-      <li>Springfield Dr. Suess Museum Art</li>
+    <ul class= "left"><p class = "listTitle">Past</p>>
+      <li class = "listItem">PopCannon</li>
+      <li class = "listItem">Springfield Dr. Suess Museum Art</li>
     </ul>
-    <ul>Present
-      <li>OrchardWatch AWS Cloud Support</li>
-      <li>UMass Net Zero Forum</li>
-      <li>???</li>
+    <ul class= "right"><p class = "listTitle">Present</p>
+      <li class = "listItem">OrchardWatch AWS Cloud Support</li>
+      <li class = "listItem">UMass Net Zero Forum</li>
+      <li class = "listItem">???</li>
     </ul>
-
+    </div>
+    <div>
     <h2>Skills</h2>
-    <ul>
-      <li>Painting</li>
-      <li>Pandiculating</li>
-      <li>Procrastinating</li>
+    
+    <ul class = "left"> <p class = "listTitle">Professional</p>>
+      <li class = "listItem">Microsoft Word</li>
+      <li class = "listItem">Balancing Accounts</li>
+      <li class = "listItem">Java, JavaScript, Making Java Coffee</li>
     </ul>
-
+    <ul class = "right"> <p class = "listTitle">Hobbies</p>>
+      <li class = "listItem">Painting</li>
+      <li class = "listItem">Pandiculating</li>
+      <li class = "listItem">Procrastinating</li>
+    </ul>
+    </div>
+    <div>
     <h2>Reach Me</h2>
     <p><a href = "https://github.com/KinsleyWA">Github</a>
       <a href = "https://venmo.com/Kinsley-Aikeins">Venmo</a>
     </p>
-
+    </div>
   </body>
 </html>
